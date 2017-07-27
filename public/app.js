@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
   })
 
   const user = firebase.auth().currentUser;
-  console.log(user);
+  // console.log(user);
 
   firebase.auth().onAuthStateChanged(user => {
     if (user) {
@@ -58,16 +58,27 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   })
 
+  const $list = document.querySelector('#list');
   $push.addEventListener('click', () => {
     // 重複することのないユニークなキーを生成するので
     // 何度押しても別データとして追加されていく
     infoRef.push({
       description: `your number is ` + Math.random() * 100,
+    }).then((value) => {
+      const keyDom = document.createElement('div');
+      keyDom.textContent = value.key;
+      $list.appendChild(keyDom);
     })
   })
   $remove.addEventListener('click', () => {
     // infoRef.remove();
-    infoRef.set(null)
+    infoRef.set(null);
+    $list.textContent = null;
+  })
+
+  infoRef.on('child_added', (data) => {
+    console.log('---child_added---');
+    // console.log('data.key',data.key);
   })
 
   window.addEventListener('keydown', e => {
@@ -77,54 +88,3 @@ document.addEventListener('DOMContentLoaded', function() {
   })
 
 })
-
-
-
-
-/**
-
-// write
-// set
-databaseRef.set()
-
-// update
-databaseRef.update()
-  .then((value) => {
-    console.log('更新完了');
-  })
-  .catch((err) => {
-    console.log(err.message);
-  })
-
-
-// read
-// on
-databaseRef.on('value',snapshot => {
-  console.log(snapshot.val());
-})
-// once
-databaseRef.once('value').then(snapshot => {
-
-})
-
-
-// この３つは同じ
-const infoRef = db.ref('/info');
-infoRef.child('user01').set({
-  name: 'user01',
-})
-
-const infoRef = db.ref('/info');
-infoRef.set({
-  user01: {
-    name: 'user01',
-  }
-})
-
-const infoRef = db.ref('/info/user01');
-infoRef.set({
-  name: 'user01',
-})
-
-
-*/

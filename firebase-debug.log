@@ -1,36 +1,28 @@
-[debug] [2017-07-26T16:36:10.319Z] ----------------------------------------------------------------------
-[debug] [2017-07-26T16:36:10.321Z] Command:      /Users/mochizuki-kazuki/.nvm/versions/node/v7.3.0/bin/node /Users/mochizuki-kazuki/.nvm/versions/node/v7.3.0/bin/firebase serve
-[debug] [2017-07-26T16:36:10.321Z] CLI Version:  3.9.1
-[debug] [2017-07-26T16:36:10.321Z] Platform:     darwin
-[debug] [2017-07-26T16:36:10.321Z] Node Version: v7.3.0
-[debug] [2017-07-26T16:36:10.322Z] Time:         Thu Jul 27 2017 01:36:10 GMT+0900 (JST)
-[debug] [2017-07-26T16:36:10.322Z] ----------------------------------------------------------------------
+[debug] [2017-07-27T11:54:21.870Z] ----------------------------------------------------------------------
+[debug] [2017-07-27T11:54:21.873Z] Command:      /Users/mochizuki-kazuki/.nvm/versions/node/v7.3.0/bin/node /Users/mochizuki-kazuki/.nvm/versions/node/v7.3.0/bin/firebase serve
+[debug] [2017-07-27T11:54:21.874Z] CLI Version:  3.9.1
+[debug] [2017-07-27T11:54:21.874Z] Platform:     darwin
+[debug] [2017-07-27T11:54:21.874Z] Node Version: v7.3.0
+[debug] [2017-07-27T11:54:21.881Z] Time:         Thu Jul 27 2017 20:54:21 GMT+0900 (JST)
+[debug] [2017-07-27T11:54:21.882Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2017-07-26T16:36:10.337Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2017-07-26T16:36:10.337Z] > authorizing via signed-in user
-[debug] [2017-07-26T16:36:10.339Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2017-07-26T16:36:10.339Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/Hjivq74BHUsCfHGXIbAWWMzL0MO0mtEUg85NsT84sbk',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Thu Jul 27 2017 01:36:10 GMT+0900 (JST)
-[debug] [2017-07-26T16:36:10.558Z] <<< HTTP RESPONSE 200
-[debug] [2017-07-26T16:36:10.559Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fir-demo-36015  
- Thu Jul 27 2017 01:36:10 GMT+0900 (JST)
-[debug] [2017-07-26T16:36:14.333Z] <<< HTTP RESPONSE 200
-[debug] [2017-07-26T16:36:14.334Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fir-demo-36015/tokens  
- Thu Jul 27 2017 01:36:14 GMT+0900 (JST)
-[debug] [2017-07-26T16:36:15.076Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-27T11:54:21.924Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-07-27T11:54:21.924Z] > authorizing via signed-in user
+[debug] [2017-07-27T11:54:21.927Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fir-demo-36015  
+ Thu Jul 27 2017 20:54:21 GMT+0900 (JST)
+[debug] [2017-07-27T11:54:25.115Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-27T11:54:25.116Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fir-demo-36015/tokens  
+ Thu Jul 27 2017 20:54:25 GMT+0900 (JST)
+[debug] [2017-07-27T11:54:25.921Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Serving from '/Users/mochizuki-kazuki/STUDY/20170726_firebase'...
+[info] === Serving from '/Users/mochizuki-kazuki/STUDY/firebase_test'...
 [info] 
-[debug] [2017-07-26T16:36:15.081Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/fir-demo-36015  
- Thu Jul 27 2017 01:36:15 GMT+0900 (JST)
-[debug] [2017-07-26T16:36:16.008Z] <<< HTTP RESPONSE 200
-[debug] [2017-07-26T16:36:16.008Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/902420132304/clients/_:getWebAppConfig  
- Thu Jul 27 2017 01:36:16 GMT+0900 (JST)
-[debug] [2017-07-26T16:36:17.130Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-27T11:54:25.925Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/fir-demo-36015  
+ Thu Jul 27 2017 20:54:25 GMT+0900 (JST)
+[debug] [2017-07-27T11:54:27.023Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-27T11:54:27.023Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/902420132304/clients/_:getWebAppConfig  
+ Thu Jul 27 2017 20:54:27 GMT+0900 (JST)
+[debug] [2017-07-27T11:54:29.746Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
 
